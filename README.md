@@ -14,17 +14,18 @@ This application processes customer order data to generate various revenue stati
 - Identifying the top 10 customers by revenue
 
 ## Project Structure
-
-- `app.py`: Main application script containing the logic for data processing.
-- `test.py`: Script containing unit tests for the application.
-- `requirements.txt`: Python dependencies required for the application.
-- `orders.csv`: Example dataset used for development purposes.
-- `Dockerfile`: Dockerfile for building the application container.
-- `Dockerfile.test`: Dockerfile for building the test environment container.
-- `docker-compose.yml`: Docker Compose configuration to manage multi-container deployment.
-- `README.md`: This documentation file.
-- `.dockerignore`: Hides files from the Docker image
-- `.gitignore`: Hides files from Git
+``` 
+├── app.py
+├── test.py
+├── requirements.txt
+├── orders.csv
+├── Dockerfile
+├── Dockerfile.test
+├── docker-compose.yml
+├── README.md
+├── .dockerignore
+└── .gitignore
+ ```
 
 ## Instructions
 
