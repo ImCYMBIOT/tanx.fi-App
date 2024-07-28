@@ -1,3 +1,7 @@
+Here's the revised documentation with markdown issues fixed:
+
+---
+
 # Infrastructure Engineer Task
 
 ## Overview
@@ -19,8 +23,8 @@ This application processes customer order data to generate various revenue stati
 - `Dockerfile.test`: Dockerfile for building the test environment container.
 - `docker-compose.yml`: Docker Compose configuration to manage multi-container deployment.
 - `README.md`: This documentation file.
-- `.dockerignore`: hides files from image
-- `.gitignore`: hides files from git
+- `.dockerignore`: Hides files from the Docker image
+- `.gitignore`: Hides files from Git
 
 ## Instructions
 
@@ -62,6 +66,7 @@ This application processes customer order data to generate various revenue stati
    ```
 
 2. **Run the Tests**:
+
    ```bash
    docker-compose run test
    ```
@@ -70,50 +75,60 @@ This application processes customer order data to generate various revenue stati
 
 To deploy the application along with the testing environment, use the following command:
 
-````bash
+```bash
 docker-compose up
+```
 
 ### Running the Application Without Docker Compose
 
-1. **Build the Docker Image for the Application:**
-    ```bash
-    docker build -t myapp -f Dockerfile .
-    ```
-2. Run the Application Container:
-    ```bash
-    docker run --rm myapp
-    ```
-3. **Build the Docker Image for the Testing Environment:**
-    ```bash
-    docker build -t myapp-test -f Dockerfile.test .
-    ```
-4. **Run the Tests:**
-    ```bash
-    docker run --rm myapp-test
-    ```
-## Example Dataset
-The orders.csv file is included as an example dataset to demonstrate the application's functionality. It contains synthetic data for development and testing purposes.
+1. **Build the Docker Image for the Application**:
 
-Advanced Skills Demonstration
+   ```bash
+   docker build -t myapp -f Dockerfile .
+   ```
+
+2. **Run the Application Container**:
+
+   ```bash
+   docker run --rm myapp
+   ```
+
+3. **Build the Docker Image for the Testing Environment**:
+
+   ```bash
+   docker build -t myapp-test -f Dockerfile.test .
+   ```
+
+4. **Run the Tests**:
+
+   ```bash
+   docker run --rm myapp-test
+   ```
+
+## Example Dataset
+
+The `orders.csv` file is included as an example dataset to demonstrate the application's functionality. It contains synthetic data for development and testing purposes.
+
+## Advanced Skills Demonstration
+
 For infrastructure-focused roles, extra points can be earned by demonstrating advanced skills such as:
 
-Deploying the project on Docker Swarm:
+- Deploying the project on Docker Swarm
+- Independently deploying each technology, including:
+  - Databases (PostgreSQL or MySQL)
+  - Redis
+  - Other relevant services
+- Implementing CI/CD pipelines, Infrastructure as Code (IaC), containerization, orchestration, and cloud platforms.
 
-Independently deploying each technology, including:
-Databases (PostgreSQL or MySQL)
-Redis
-Other relevant services
-Implementing CI/CD pipelines, Infrastructure as Code (IaC), containerization, orchestration, and cloud platforms.
+## Additional Information
 
-Additional Information
 This application is designed to be easily deployable and scalable using Docker and Docker Compose. It can be extended to integrate more complex infrastructure setups such as Kubernetes, CI/CD pipelines, and cloud deployments.
 
 For any queries or issues, please contact:
 
-```Agnivesh Kumar
-Email: agniveshkumar15@gmail.com
-LinkedIn: Agnivesh Kumar
-GitHub: ImCYMBIOT```
+**Agnivesh Kumar**  
+Email: agniveshkumar15@gmail.com  
+LinkedIn: [Agnivesh Kumar](https://www.linkedin.com/in/agnivesh-kumar)  
+GitHub: [ImCYMBIOT](https://github.com/ImCYMBIOT)
 
-
-````
+---
