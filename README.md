@@ -40,8 +40,8 @@ This application processes customer order data to generate various revenue stati
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   gh repo clone ImCYMBIOT/tanx.fi-App
+   cd tanx.fi-App
    ```
 
 2. **Build the Docker Images**:
